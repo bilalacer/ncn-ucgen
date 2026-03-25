@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzBlMGYxMSIvPjxwb2x5Z29uIHBvaW50cz0iMTYsNCAyOCwyNiA0LDI2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGQ0YWEiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIxNiw0IDIyLDE1IDEwLDE1IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGQ0YWEiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjYiLz48cG9seWdvbiBwb2ludHM9IjEwLDE1IDIyLDE1IDI4LDI2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGQ0YWEiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjYiLz48cG9seWdvbiBwb2ludHM9IjQsMjYgMTAsMTUgMTYsMjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZDRhYSIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIG9wYWNpdHk9IjAuNiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iNCIgcj0iMS41IiBmaWxsPSIjMDBkNGFhIi8+PGNpcmNsZSBjeD0iMjgiIGN5PSIyNiIgcj0iMS41IiBmaWxsPSIjMDBkNGFhIi8+PGNpcmNsZSBjeD0iNCIgY3k9IjI2IiByPSIxLjUiIGZpbGw9IiMwMGQ0YWEiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjE1IiByPSIxLjIiIGZpbGw9IiMwMGQ0YWEiIG9wYWNpdHk9IjAuNyIvPjxjaXJjbGUgY3g9IjIyIiBjeT0iMTUiIHI9IjEuMiIgZmlsbD0iIzAwZDRhYSIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSIyNiIgcj0iMS4yIiBmaWxsPSIjMDBkNGFhIiBvcGFjaXR5PSIwLjciLz48L3N2Zz4=">
 <title>NCN → TIN Dönüştürücü</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
@@ -552,12 +553,27 @@
   .info-row-key { font-size: 12px; color: var(--text2); }
   .info-row-val { font-family: var(--mono); font-size: 11px; color: var(--accent); }
 </style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzBlMGYxMSIvPjxwb2x5Z29uIHBvaW50cz0iMTYsNCAyOCwyNiA0LDI2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGQ0YWEiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIxNiw0IDIyLDE1IDEwLDE1IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGQ0YWEiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjYiLz48cG9seWdvbiBwb2ludHM9IjEwLDE1IDIyLDE1IDI4LDI2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGQ0YWEiIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjYiLz48cG9seWdvbiBwb2ludHM9IjQsMjYgMTAsMTUgMTYsMjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZDRhYSIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIG9wYWNpdHk9IjAuNiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iNCIgcj0iMS41IiBmaWxsPSIjMDBkNGFhIi8+PGNpcmNsZSBjeD0iMjgiIGN5PSIyNiIgcj0iMS41IiBmaWxsPSIjMDBkNGFhIi8+PGNpcmNsZSBjeD0iNCIgY3k9IjI2IiByPSIxLjUiIGZpbGw9IiMwMGQ0YWEiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjE1IiByPSIxLjIiIGZpbGw9IiMwMGQ0YWEiIG9wYWNpdHk9IjAuNyIvPjxjaXJjbGUgY3g9IjIyIiBjeT0iMTUiIHI9IjEuMiIgZmlsbD0iIzAwZDRhYSIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSIyNiIgcj0iMS4yIiBmaWxsPSIjMDBkNGFhIiBvcGFjaXR5PSIwLjciLz48L3N2Zz4=">
 </head>
 <body>
 <div class="container">
 
   <header>
-    <div>
+    <div style="display:flex;align-items:flex-start;gap:16px">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+  <rect width="36" height="36" rx="8" fill="rgba(0,212,170,0.08)"/>
+  <polygon points="18,5 31,29 5,29" fill="none" stroke="#00d4aa" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="18,5 24,17 12,17" fill="none" stroke="#00d4aa" stroke-width="1.1" stroke-linejoin="round" opacity="0.55"/>
+  <polygon points="12,17 24,17 31,29" fill="none" stroke="#00d4aa" stroke-width="1.1" stroke-linejoin="round" opacity="0.55"/>
+  <polygon points="5,29 12,17 18,29" fill="none" stroke="#00d4aa" stroke-width="1.1" stroke-linejoin="round" opacity="0.55"/>
+  <circle cx="18" cy="5" r="1.6" fill="#00d4aa"/>
+  <circle cx="31" cy="29" r="1.6" fill="#00d4aa"/>
+  <circle cx="5" cy="29" r="1.6" fill="#00d4aa"/>
+  <circle cx="12" cy="17" r="1.2" fill="#00d4aa" opacity="0.65"/>
+  <circle cx="24" cy="17" r="1.2" fill="#00d4aa" opacity="0.65"/>
+  <circle cx="18" cy="29" r="1.2" fill="#00d4aa" opacity="0.65"/>
+</svg>
+      <div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
         <div class="logo">TIN</div>
         <h1>NCN <span>→</span> TIN</h1>
